@@ -1,15 +1,15 @@
-package com.example.weblogic.controller;
+package com.example.weblogic;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/resource")
-public class ResourceController {
+@RequestMapping("/")
+public class HelloWorldController {
 
     @RequestMapping(method = RequestMethod.GET)
     String readResource() {
-        return "hello!";
+        return "Hello World!!";
     }
 }
